@@ -6,6 +6,7 @@ public class Student {
   Integer id;
   String name;
   String email;
+  Integer age;
   Date birthday;
   
 }
