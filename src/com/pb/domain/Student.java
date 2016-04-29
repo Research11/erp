@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Student {
 	Integer id;
+	Integer age;
 	String name;
 	String email;
 	Date bithday;
@@ -14,6 +15,14 @@ public class Student {
 	}
 	public void setId(Integer id) {
 		this.id = id;
+	}
+	
+	
+	public Integer getAge() {
+		return age;
+	}
+	public void setAge(Integer age) {
+		this.age = age;
 	}
 	public String getName() {
 		return name;
