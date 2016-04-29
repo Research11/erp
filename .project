@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>test</name>
+=======
+	<name>TestDemo</name>
+>>>>>>> branch 'brh' of https://github.com/Research11/erp.git
 	<comment></comment>
 	<projects>
 	</projects>
