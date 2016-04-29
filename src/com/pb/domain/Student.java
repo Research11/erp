@@ -1,5 +1,11 @@
 package com.pb.domain;
 
-public class Student {
+import java.util.Date;
 
+public class Student {
+  Integer id;
+  String name;
+  String email;
+  Date birthday;
+  
 }
