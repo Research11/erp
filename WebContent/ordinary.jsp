@@ -4,13 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>登录</title>
+<title>Insert title here</title>
 </head>
 <body>
-<form action="login" method="post">
-<input type="text" name="name"/><br/>
-<input type="password" name="password"/><br/>
-<input type="submit" value="登录"/>
-</form>
+	<h2>普通用户登录界面，就是什么都没有，暂时比较尴尬</h2>
 </body>
 </html>

@@ -23,10 +23,26 @@
         </global-exception-mappings>
 
         <action name="login" class="loginaction">
-            <result>
-                /display.jsp
-            </result>
+            <result name="success" type="redirectAction">${tage}</result>
+            <result name="input">/login.jsp</result>
         </action>
+        
+        <action name="admin" class="loginaction">
+        	<result>/display.jsp</result>
+        </action>
+        
+        <action name="ordinary" class="loginaction">
+        	<result>/ordinary.jsp</result>
+        </action>
+        
+        <action name="update" class="updateaction">
+        	<result>/update.jsp</result>
+        </action>
+        
+        <action name="saveupdate" class="saveaction">
+        	<result>/display.jsp</result>
+        </action>
+       
     </package>
 
 </struts>

@@ -7,8 +7,14 @@ public class Student {
 	String name;
 	String email;
 	Date birthday;
+	Classes classes;
 	
-	
+	public Classes getClasses() {
+		return classes;
+	}
+	public void setClasses(Classes classes) {
+		this.classes = classes;
+	}
 	public Integer getId() {
 		return id;
 	}

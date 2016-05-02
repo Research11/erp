@@ -7,20 +7,36 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.pb.dao.StudentDao;
-import com.pb.domain.Student;
 
 public class loginaction extends ActionSupport{
-	/*Student student;
+	String tage;
+	String name;
+	String password;
 	
-	
-	public Student getStudent() {
-		return student;
+	public String getTage() {
+		return tage;
 	}
 
-	public void setStudent(Student student) {
-		this.student = student;
-	}*/
-	
+	public void setTage(String tage) {
+		this.tage = tage;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	List list;
 	
 	public List getList() {
@@ -35,7 +51,20 @@ public class loginaction extends ActionSupport{
 		ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
 		StudentDao studentdao=(StudentDao) context.getBean("studentDao");
 		list=studentdao.list();
-		return SUCCESS;
+		System.out.println(name);
+		System.out.println(password);
+		
+		if(name.equals(password)){
+			if(name.equals("admin")){
+				tage="admin";
+				return SUCCESS;
+			}else{
+				tage="ordinary";
+				return SUCCESS;
+			}
+		}else{
+			return INPUT;
+		}		
 	}
 	
 }

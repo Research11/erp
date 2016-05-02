@@ -12,27 +12,27 @@ public class StudentDaoImpl extends HibernateTemplate implements StudentDao{
 	@Override
 	public void svae(Student student) {
 		// TODO Auto-generated method stub
-		this.save(student);		
+		super.save(student);		
 	}
 
 	@Override
 	public void delete(Student student) {
 		// TODO Auto-generated method stub
-		this.delete(student);
+		super.delete(student);
 		
 	}
 
 	@Override
 	public void update(Student student) {
 		// TODO Auto-generated method stub
-		this.update(student);
+		super.update(student);
 	}
 
 	@Override
 	public Student findBid(Integer id) {
 		// TODO Auto-generated method stub
 		
-		return (Student) get(Student.class, id);
+		return (Student)super.get(Student.class, id);
 		 
 	}
 
@@ -40,7 +40,7 @@ public class StudentDaoImpl extends HibernateTemplate implements StudentDao{
 	public List<Student> list() {
 		// TODO Auto-generated method stub
 		//this.find("from Student");
-		return this.loadAll(Student.class);
+		return super.find("from Student");
 	}
 
 }
