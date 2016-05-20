@@ -33,7 +33,7 @@
 	  </bean>
     
 	 <bean id="studentDao" class="com.pb.dao.StudentDaoImpl">
-			<property name="sessionFactory" ref="SessionFactory"/>
+		<property name="sessionFactory" ref="SessionFactory"/>
 	 </bean> 
 	 
 	 <bean id="classes" class="com.pb.dao.ClassesDaoImpl">
